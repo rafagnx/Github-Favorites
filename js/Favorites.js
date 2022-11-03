@@ -2,6 +2,7 @@ import { GithubUser } from "./GithubUser.js"
 
 // classe que vai conter a lógica dos dados
 // como os dados serão estruturados
+
 export class Favorites {
   constructor(root) {
     this.root = document.querySelector(root)
@@ -18,7 +19,7 @@ export class Favorites {
 
   async add(username) {
     try {
-
+ 
       const userExists = this.entries.find(entry => entry.login === username)
 
       if(userExists) {
